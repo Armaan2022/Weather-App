@@ -51,7 +51,7 @@ function WeatherApp() {
                         <div className="top-details">
                             <div className="left-side">
                                 <div className="location">
-                                    {data.sys ? <h3>{data.name}, {data.sys.country}</h3> : null}
+                                    {data.sys ? <h2>{data.name}, {data.sys.country}</h2> : null}
                                 </div>
                                 <div className="temp">
                                     {data.main ? <h2>{data.main.temp.toFixed()}°C</h2> : null}

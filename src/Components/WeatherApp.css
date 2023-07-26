@@ -94,7 +94,6 @@ body{
 }
 .humidity, .feels-like, .wind{
     text-align: center;
-    transition: 1.6s ease-in;
 }
 .location{
     text-transform: capitalize;
@@ -120,6 +119,7 @@ body{
     color: rgba(250, 250, 250, 0.7);
     font-family: 'Rubik', sans-serif;
     text-align: center;
+    margin-bottom: 30px;
 }
 .errorMessage p a{
     text-transform: uppercase;
@@ -131,4 +131,115 @@ body{
     margin-right: auto;
     border-radius: 20px;
     mix-blend-mode: multiply;
+}
+@media screen and (max-width: 1920px) {
+    .container {
+      width: 50%;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .container {
+      width: 60%;
+    }
+}
+@media screen and (max-width: 736px) {
+    .container {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 570px) {
+    .container{
+        height: 140px;
+    }
+    .is-showing{
+        height: 700px;
+    }
+    .search-bar{
+        font-size: 20px;
+    }
+    .search-button{
+        font-size: 15px;
+    }
+    .location{
+        font-size: 15px;
+    }
+    .temp{
+        font-size: 20px;
+    }
+    .description{
+        font-size: 22px;
+    }
+    .icon img{
+        width: 70px;
+        height: 70px;
+    }
+    .weather-details{
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        margin-top: -20px;
+    }
+    .errorMessage {
+        font-size: 20px;
+    }
+    .humidity, .feels-like{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        
+    }
+}
+@media screen and (max-width: 480px) {
+
+    .search-bar{
+        font-size: 15px;
+    }
+    .location{
+        font-size: 12px;
+    }
+    .temp{
+        font-size: 15px;
+    }
+    .description{
+        font-size: 18px;
+    }
+    .icon img{
+        width: 50px;
+        height: 50px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .search{
+        display: contents;
+    }
+    .search-bar{
+        margin: 30px 5px 30px 30px;
+        font-size: 10px;
+        width: 50%;
+    }
+    .search-button{
+        font-size: 10px;
+        width: 30px;
+        padding-right: 10px;
+    }
+    .errorMessage{
+        font-size: 15px;
+    }
+    
+}
+@media screen and (max-height: 810px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .is-showing{
+        height: 80%;
+    }
+    .errorMessage{
+        font-size: 20px;
+    }
+    .errorMessage p{
+        padding: 10px;
+    }
+    .errorMessage img{
+        width: 40%;
+    }
 }
