@@ -59,7 +59,7 @@ function WeatherApp() {
                             </div>
                             <div className="right-side">
                                 <div className="icon">
-                                    {data.weather ? <img src={`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`} title="image"/> : null}
+                                    {data.weather ? <img src={`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`} title="image" alt=""/> : null}
                                 </div>
                                 
                                 <div className="description">
