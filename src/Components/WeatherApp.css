@@ -121,7 +121,7 @@ body{
     text-align: center;
     margin-bottom: 30px;
 }
-.errorMessage p a{
+.errorMessage p span{
     text-transform: uppercase;
 }
 .errorMessage img{

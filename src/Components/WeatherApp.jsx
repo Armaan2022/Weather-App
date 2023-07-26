@@ -88,7 +88,7 @@ function WeatherApp() {
                     <div className="errorMessage">
                         <img src={error} alt="Error logo"/>
                         <p>OOPS!</p>
-                        <p><a>'{errorMessage.location}'</a> {errorMessage.message}!</p>
+                        <p><span>'{errorMessage.location}'</span> {errorMessage.message}!</p>
                         <p>Enter a valid location.</p>
                     </div>
                     ))
