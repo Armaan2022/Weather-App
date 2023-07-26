@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Tillana:wght@400;500&display=swap');
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(224, 150, 137);
+}
+.app{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: url('./Images/background2.jpg') center center/cover;
+    left: 0;
+    top: 0;
+    z-index: -1; 
+}
+.container{
+    width: 600px;
+    height: 150px;
+    background-color: #0000008b;
+    margin: auto;
+    margin-top: 90px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 40px;
+}
+.is-showing{
+    height: 700px;
+    transition: 0.5s;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.search-bar{
+    width: 70%;
+    font-size: 25px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 40px;
+    border: none;
+    background-color: black;
+    color: white;
+    outline: none;
+}
+.search-bar:hover{
+    background-color: rgb(15, 15, 15);
+}
+.search-button{
+    border-radius: 40px;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    width: 50px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+.search-button:hover{
+    background-color: rgb(35, 35, 35);
+    font-size: 23px;
+}
+.search-button:active{
+    background-color: rgb(5, 5, 5);
+}
+.weather{
+    font-size: 20px;
+    padding: 30px;
+    color: white;
+    font-family: 'Tillana', cursive;
+}
+.top-details{
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.left-side{
+    flex-basis: 50%;
+    padding-left: 10%;
+}
+.right-side{
+    flex-basis: 45%;
+    padding-left: 20%;
+}
+.weather-details{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    column-gap: 50px;
+    background-color: rgba(5, 5, 5, 0.306);
+    border-radius: 20px;
+    position: relative;
+}
+.humidity, .feels-like, .wind{
+    text-align: center;
+    transition: 1.6s ease-in;
+}
+.location{
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.icon img{
+    width: 100px;
+    height: 100px;
+    border: none;
+}
+.temp{
+    font-size: 35px;
+}
+.description{
+    text-transform: capitalize;
+    font-size: 25px;
+}
+.text{
+    font-weight: 800;
+}
+.errorMessage{
+    font-size: 30px;
+    color: rgba(250, 250, 250, 0.7);
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+.errorMessage p a{
+    text-transform: uppercase;
+}
+.errorMessage img{
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    mix-blend-mode: multiply;
+}
