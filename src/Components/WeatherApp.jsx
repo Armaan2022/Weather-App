@@ -91,11 +91,11 @@ function WeatherApp() {
                         <p><a>'{errorMessage.location}'</a> {errorMessage.message}!</p>
                         <p>Enter a valid location.</p>
                     </div>
-                ))
-            }
+                    ))
+                }
                 
             </div>
-        /</div>
+        </div>
         </>
     )
 }
