@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import './WeatherApp.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons"
@@ -46,7 +46,7 @@ function WeatherApp() {
                     <button className="search-button" onClick={getWeather}><FontAwesomeIcon icon={faMagnifyingGlass} title="search-icon"/></button>
                 </div>
 
-                {data.name != undefined ? (
+                {data.name !== undefined ? (
                     <div className="weather">
                         <div className="top-details">
                             <div className="left-side">
